@@ -530,7 +530,6 @@ header {
 	.bullet span {
 		position: absolute;
 		margin: -3px 0 0 -35px;
-		opacity: 0.5;
 		font: 400 18px/28px Roboto Condensed
 	}
 		.bullet span b {
@@ -1365,7 +1364,7 @@ header {
 	}
 	.title0 {
 		font:300 16px/28px Roboto Condensed;
-		color:rgba(255,255,255,0.5);
+		color: white;
 	}
 	.title1 {
 		font:68px/48px "Masterics";
@@ -1763,7 +1762,8 @@ header {
 			display:none
 		}
 		.footer {
-			background-attachment:scroll
+			background-attachment:scroll;
+			background-position-y: 0px;
 		}
 	.story_img {
 		width: 200px;
@@ -1957,3 +1957,11 @@ h1 {
 		height: auto;
 	}
 
+.text-sobre{
+	margin-top: 25px;
+}
+
+#sample{
+	font-weight: bold;
+	font-size: 19px;
+}

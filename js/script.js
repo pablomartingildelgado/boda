@@ -139,10 +139,14 @@
 	});
 })(jQuery);
 
-function copyText() {
-      
-	/* Copy text into clipboard */
-	navigator.clipboard.writeText
-		("Cacota.");
-		alert("Has copiado la cuenta: Cacota.");
+
+function CopyToClipboard(id)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+alert("Has copiado la cuenta correctamente");
 }
